@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Timer</title>
+  <style>
+    body { font-family: sans-serif; min-width: 300px; padding: 10px; background-color: #121212; color: #fff; }
+    .tab-entry { margin-bottom: 10px; padding: 5px; border-bottom: 1px solid #444; }
+    .tab-title { font-weight: bold; }
+    .tab-url { font-size: 0.85em; color: #ccc; }
+    button { margin-top: 5px; background: #333; color: #fff; border: 1px solid #555; padding: 4px 8px; }
+    input { background: #222; color: #fff; border: 1px solid #555; }
+  </style>
+</head>
+<body>
+  <div>
+    Threshold (min): <input id="threshold" type="number" min="1" value="30" />
+    <button id="setThreshold">Set</button>
+    <button id="export">Export CSV</button>
+  </div>
+  <div id="tabsContainer">Loading...</div>
+  <script src="popup.js"></script>
+</body>
+</html>

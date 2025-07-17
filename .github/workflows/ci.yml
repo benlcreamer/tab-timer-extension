@@ -1,0 +1,12 @@
+name: Lint JS
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install ESLint
+        run: npm install --save-dev eslint
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.html
