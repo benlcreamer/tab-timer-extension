@@ -1,18 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Tab Timer",
-  "version": "1.5",
-  "description": "Track how long each tab has been open, notify after a threshold, and export session data.",
+  "version": "1.6",
+  "description": "Track and manage how long each tab has been open, notify after a threshold, export session data, and close tabs.",
   "permissions": ["tabs", "storage", "notifications", "downloads", "alarms"],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    }
-  }
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" } }
 }
